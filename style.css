@@ -1,0 +1,104 @@
+html{
+    height: 100%;
+    width: 100%;
+   }
+   
+   body{
+    width: 100%;
+    height: 100%;
+   }
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: black;
+    color: white;
+    background-image: url('https://images.steamusercontent.com/ugc/2413438784260913380/7CC7F0ADFD23E0ACCA835442184E3605C724A877/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    background-color: #222;
+    border: 2px solid #4781ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.loginbox{
+    background-color: #222;
+    border: 2px solid #4781ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    max-height: 500px;
+    text-align: left;
+}
+
+.inputplace{
+    background-color: #4781ff;
+    border: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 3px auto;
+    font-family: Comic Sans MS;
+}
+
+.lastbox {
+    background-color: #222;
+    border: 2px solid #4781ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1600px;
+    text-align: center;
+}
+
+.box h3, .box p {
+    margin: 10px 0;
+}
+
+@keyframes rainbow {
+    0% { border-color: rgb(0, 255, 191); }
+    20% { border-color: rgb(89, 0, 255); }
+    40% { border-color: rgb(0, 217, 255); }
+    60% { border-color: rgb(24, 133, 235); }
+    80% { border-color: blue; }
+    90% { border-color: rgb(1, 19, 102); }
+    100% { border-color: rgb(168, 103, 253); }
+}
+
+.rainbow-gradient {
+    background: linear-gradient(to bottom, #0044ff, #4781ff);
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid red;
+    animation: rainbow 3s infinite;
+}
+
+button {
+    background-color: #0044ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4781ff;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #0099ff;
+    transform: scale(0.95);
+}
