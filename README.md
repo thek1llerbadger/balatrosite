@@ -1,2 +1,2 @@
-# balatrosite
-random webpage i made
+# SITE DE BALATRO EXPERIMENTAL
+Webpage de Balatro feita na brincadeira só pra passar o tempo...
