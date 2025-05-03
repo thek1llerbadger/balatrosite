@@ -1,21 +1,34 @@
-        let tentativa = 0;
-        let acesso = false;
-        let senha = document.getElementById("senha")
-        let email = document.getElementsByName("Email")
+// balatro.js
+// Function to handle the login process
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var storedEmail = localStorage.getItem("email");
+    var storedPassword = localStorage.getItem("password");
 
-       function iniciarLogin(){
-            while (tentativa < 3 || !acesso) {
-                if (senha == 1234 && email == "marcioherobrine@gmail.com")
-                {
-                    alert("Acesso garantido");
-                    acesso = true;
-                }else{
-                    tentativa++;
-                    alert("Senha incorreta, tente novamente. Tentativas restantes: " + (3 - tentativa));
-                }
+    function register() {
+        if (email === "" && password === "") {
+            alert("Please enter your email and password.");
+                return;
             }
-
-            if (!acesso) {
-                alert("Acesso bloqueado. Número máximo de tentativas excedido.");
+        if (email !== "" && password !== "") {
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", password);
+            document.getElementById("criar").innerHTML = "Conta criada com sucesso!";
+            document.getElementById("criar").style.color = "lightgreen";
             }
         }
+       
+    function login() {                  
+        if (email === "" && password === "") {
+            alert("Please enter your email and password.");
+            }else if (email !== "" || password !== "1234") {
+            document.getElementById("incorreto").innerHTML = "Email ou Senha incorreto(s).";
+            document.getElementById("incorreto").style.color = "red";
+            }else if (email === storedEmail && password === storedPassword) {
+                alert("Login successful!");
+                window.location.href = "http://127.0.0.1:5500/balatro.html";
+            }
+        else {
+            alert("Please enter your email and password.");
+        }
+    }
