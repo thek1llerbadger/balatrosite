@@ -9,6 +9,14 @@
     <script src="balatro.js"></script>
 </head>
 <body>
+    <div class="header">
+        <source media="(max-width:650px)" srcset="https://image.api.playstation.com/vulcan/ap/rnd/202402/1416/0ed72ad5aab1a7acee6e84fe686ad217c5e8fc3985b06206.png">
+        <div class="header-right">
+          <a class="active" href="balatro.html">Home</a>
+          <a href="userload.html">Login</a>
+          <a href="userregister.html">Register</a>
+        </div>
+      </div> 
     <div class="loginbox" style="position: absolute; top: 30%; left: 100px; width: 600px">
         <h2 style="position: absolute; top: 5%;">Registro De Usuário</h2> <br><br><br>
         <label for="email">Email:</label><br>
@@ -16,7 +24,7 @@
         <label for="senha">Senha:</label><br>
         <input type="password" name="Senha" id="senha" class="inputplace" style="position: absolute; width: 500px; font-size: 100%;"><br><br><br>
         <p id="criar" style="margin-top: 5px; margin-bottom: 10px;"></p>
-        <button type="submit" style="font-family: Comic Sans MS;" class="button" onclick="register()">Entrar</button>
+        <button type="submit" style="font-family: Comic Sans MS;" class="button" onclick="register()">Criar</button>
         <Button class="Button" style="margin-left: 10px;"><a href="userload.html" style="color: aqua; margin-bottom: auto; font-family: Comic Sans MS;">Ir para o Login</a></Button>
     </div>   
 </body>
